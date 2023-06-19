@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    /* ----------------- hide Horizontal line  */
+    overflow-x: hidden; 
+}
+.container {
+    /* ....................... here divide sections */
+    display: grid;
+    grid-template-areas: "header" "frist" "second" "three" "footer";
+    grid-template-rows: 145vh 550px 300px 750px 60px;
+    height: 10vw;
+    width: 100%;
+
+}
+/* ................................................ header section here */
+.header {
+    grid-area: header;
+    background-image: url(https://snabbtech.com/wp-content/uploads/2023/05/banner-1.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #05467b;
+    z-index: 1;
+    
+}
+
+.nav{
+    background-color: #003A68;
+    height: 80px;
+    width: 100%;
+}
+
+.container .header .nav img{
+    margin-top: 6px;
+    height: 70px;
+    margin-left: 40px;
+}
+/* -----------------------------------navbar here  */
+nav{
+    background-color: #003A68;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    box-sizing: border-box;
+}
+nav img{
+    margin-top: 6px;
+    height: 70px;
+    margin-left: 40px;
+}
+nav ul{
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-right: 55px;
+}
+nav ul li a{
+    line-height: 80px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px;
+    font-family: Inter, sans-serif;
+
+}
+nav ul li a:hover{
+    color: #23C653;
+}
+/* ---------------------- */
+
+.whrite {
+    font-family: Inter, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 100px;
+    font-size: 26px;
+    /* margin-left: 180px; */
+    margin-top: 250px;
+}
+.whrite p {
+    font-size: 20px;
+}
+
+.button {
+    margin-top: -80px;
+    text-align: center;
+    height: 5rem;
+}
+
+.btn {
+    width: 180px;
+    height: 3.5rem;
+    margin-left: -5px;
+    margin-top: 6px;
+    padding-bottom: 10px;
+    background-color: #61CE70;
+    color: black;
+    outline: none;
+    border: none;
+    font-size: 25px;
+
+}
+.button .spa:hover{
+    background-color:#003A68;
+    opacity: 0.8;
+    border: 1px solid black;
+}
+
+/* ................................................ card section here */
+.card{
+    margin-top: 80px;
+    margin-left: 30px;
+    margin-right: 80px;
+    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 10px;
+}
+.card1{
+    margin-left: 50px;
+}
+
+.card_card{
+    padding: 20px;
+    width: 95%;
+    height: 13rem;
+    background-color: white;
+    opacity: none;
+}
+.card_card span{
+    background-color: #23C653;
+    border-radius: 50%;
+    padding: 20px;
+}
+.card_card span i{
+    margin: 30px 0;
+}
+.card_card p{
+    padding: 20px;
+}
+.card_details{
+    margin-top: -220px;
+    line-height: 1.6;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    padding: 25px;
+
+}
+
+
+/* ................................................ Frist section here */
+.Frist {
+    grid-area: frist;
+    background-color: #F4F5F7;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Frist_margine{
+    margin-top: 60px;
+}
+
+.Frist_Frist {
+    margin: 130px 0 0 80px;
+    font-size: 30px;
+    float: left;
+    height: 10px;
+}
+
+.Frist_Frist p {
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: Inter, sans-serif;
+}
+
+.Frist_Frist_Frist img {
+    height: 200px;
+    width: 400px;
+    margin-left: 800px;
+}
+
+/* ................................................ second section here */
+.second {
+    grid-area: second;
+    background-color: #003A68;
+}
+
+.second_second h2 {
+    color: white;
+    height: 350px;
+    font-family: Inter, sans-serif;
+    font-size: 40px;
+    margin: 100px 0 20px 70px;
+    /* font-weight: bold; */
+    float: left;
+}
+
+.second_second_second {
+    height: 350px;
+    margin-left: 700px;
+    /* margin-top: 5px; */
+    padding: 130px;
+    color: black;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.second_second_second button {
+    padding: 20px;
+    font-size: 20px;
+    height: 60px;
+    width: 200px;
+    outline: none;
+    border: none;
+    background-color: #61CE70;
+}
+
+/* ................................................ third section here */
+.three {
+    grid-area: three;
+    background-color: #F4F5F7;
+}
+
+.three h1 {
+    color: black;
+    text-align: center;
+    font-size: 49px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 80px;
+}
+
+.three_three_padding {
+    padding: 50px;
+    width: 80%;
+    margin-left: 80px;
+    background-color: white;
+}
+
+.three_three_padding p {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    color: rgb(54, 53, 53);
+    padding: 10px 30px 50px 60px;
+    line-height: 1.6;
+
+}
+
+.photo_name img {
+    margin-top: 10px;
+    margin-left: 60px;
+    float: left;
+    height: 3.5rem;
+    border-radius: 50%;
+}
+
+.photo_name p {
+    float: left;
+}
+.dp_name p{
+    font-size: 15px;
+}
+.dp_name .name p{
+    margin-left: 70px;
+}
+
+.img img {
+    margin-left: 680px;
+    margin-top: -100px;
+}
+
+/* ................................................ Footer section here */
+.footer {
+    grid-area: footer;
+    background-color: #003A68;
+}
+
+.footer div {
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    margin-left: 30px;
+}
+/* ................................................ Go to the top button section here */
+
+/* html{
+    scroll-behavior: smooth;
+} */
+
+.back-top a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 100px;
+    color: white;
+    display: inline-block;
+    transform: translateY(-5px);
+
+}
+.back-top{
+    /* position: fixed; */
+    /* display: none; */
+    margin-top: -50px;
+    width: 4%;
+    height: 40px;
+    background-color:#23C653;
+    border-radius: 5px;
+    margin-left: 75rem;
+    outline: none;
+    border: none;
+}
+.back-top:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.back-top a {
+    margin-left: 10px;
+}
+.back-top a i {
+    margin-top: 9px;
+    margin-right: 8px;
+    font-size: 15px;
+}
+.back-top a i:hover{
+    color: #23C653;
+}
+
