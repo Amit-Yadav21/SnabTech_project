@@ -19,7 +19,7 @@ body{
 /* ................................................ header section here */
 .header {
     grid-area: header;
-    background-image: url(https://snabbtech.com/wp-content/uploads/2023/05/banner-1.jpg);
+    background-image: url('https://snabbtech.com/wp-content/uploads/2023/05/banner-1.jpg');
     background-size: cover;
     background-blend-mode: multiply;
     background-color: #05467b;
